@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TargetActionVC" customModule="TargetActionVsProtocolDelegate" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="5Li-dx-QyI">
+                    <rect key="frame" x="8" y="120" width="359" height="360"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BTO-zu-JIf">
+                            <rect key="frame" x="119.5" y="0.0" width="120" height="40"/>
+                            <color key="backgroundColor" red="1" green="0.43370169819999999" blue="0.0221825446" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="120" id="1XM-7P-Mxu"/>
+                                <constraint firstAttribute="height" constant="40" id="SHr-jJ-XoE"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                            <state key="normal" title="Tap On Me">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="onTap:" destination="-1" eventType="touchUpInside" id="V5s-sF-ceX"/>
+                            </connections>
+                        </button>
+                        <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0iP-GX-fVV">
+                            <rect key="frame" x="155" y="64" width="51" height="40"/>
+                            <connections>
+                                <action selector="onSwitchChange:" destination="-1" eventType="valueChanged" id="2x9-uJ-Ljq"/>
+                            </connections>
+                        </switch>
+                        <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="7yj-pf-qhz">
+                            <rect key="frame" x="6" y="128" width="347" height="41"/>
+                            <connections>
+                                <action selector="sliderDrage:" destination="-1" eventType="valueChanged" id="Ybe-39-ba7"/>
+                            </connections>
+                        </slider>
+                        <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="a48-yW-4dL">
+                            <rect key="frame" x="118.5" y="192" width="122" height="41"/>
+                            <segments>
+                                <segment title="Tôm"/>
+                                <segment title="Cua"/>
+                                <segment title="Cá"/>
+                            </segments>
+                            <connections>
+                                <action selector="SegmentChange:" destination="-1" eventType="valueChanged" id="daO-a0-LaR"/>
+                            </connections>
+                        </segmentedControl>
+                        <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="CHF-wr-d6S">
+                            <rect key="frame" x="132.5" y="256" width="94" height="29"/>
+                            <connections>
+                                <action selector="onStepperChange:" destination="-1" eventType="valueChanged" id="DdV-Eq-rt8"/>
+                            </connections>
+                        </stepper>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="P1y-5P-Wte">
+                            <rect key="frame" x="8" y="320" width="343" height="40"/>
+                            <nil key="textColor"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                            <connections>
+                                <action selector="onTextChange:" destination="-1" eventType="valueChanged" id="VxT-sT-Nbc"/>
+                                <action selector="textEditingDidBegin:" destination="-1" eventType="editingDidBegin" id="qjh-Pn-z1s"/>
+                            </connections>
+                        </textField>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="7yj-pf-qhz" secondAttribute="trailing" constant="8" id="Cz6-ZF-gxN"/>
+                        <constraint firstItem="P1y-5P-Wte" firstAttribute="leading" secondItem="5Li-dx-QyI" secondAttribute="leading" constant="8" id="nJD-tx-0By"/>
+                        <constraint firstAttribute="trailing" secondItem="P1y-5P-Wte" secondAttribute="trailing" constant="8" id="u5z-v8-i7W"/>
+                        <constraint firstItem="7yj-pf-qhz" firstAttribute="leading" secondItem="5Li-dx-QyI" secondAttribute="leading" constant="8" id="wY6-bJ-5F3"/>
+                    </constraints>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="5Li-dx-QyI" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="8" id="0OE-tx-Wrt"/>
+                <constraint firstItem="5Li-dx-QyI" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="100" id="DP9-o3-HZl"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="5Li-dx-QyI" secondAttribute="trailing" constant="8" id="U4J-fC-5T6"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="-1036" y="105"/>
+        </view>
+    </objects>
+</document>

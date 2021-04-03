@@ -1,0 +1,5 @@
+target 'PersistData' do
+  use_frameworks!
+	pod 'SteviaLayout'
+	pod 'SQLite.swift', '~> 0.12.0'
+end

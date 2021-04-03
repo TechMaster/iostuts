@@ -1,0 +1,470 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		70E835B44D2F1A09A86AC3AA /* Pods_BrotherVietnam.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A954DB79F437652BE01C659 /* Pods_BrotherVietnam.framework */; };
+		E26D52802272A9CC001329C5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E26D527F2272A9CC001329C5 /* Assets.xcassets */; };
+		E26D52832272A9CC001329C5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E26D52812272A9CC001329C5 /* LaunchScreen.storyboard */; };
+		E26D528F2272AB5B001329C5 /* BootLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26D528B2272AB5B001329C5 /* BootLogic.swift */; };
+		E26D52902272AB5B001329C5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26D528C2272AB5B001329C5 /* AppDelegate.swift */; };
+		E26D52912272AB5B001329C5 /* MainScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26D528D2272AB5B001329C5 /* MainScreen.swift */; };
+		E26D52922272AB5B001329C5 /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26D528E2272AB5B001329C5 /* Menu.swift */; };
+		E26D52952272ACCB001329C5 /* CustomLoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26D52942272ACCB001329C5 /* CustomLoginVC.swift */; };
+		E26D52A02272B267001329C5 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26D529D2272B267001329C5 /* UIColor+Extension.swift */; };
+		E26D52A12272B267001329C5 /* UILabel+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26D529E2272B267001329C5 /* UILabel+Extension.swift */; };
+		E26D52A22272B267001329C5 /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26D529F2272B267001329C5 /* RoundButton.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		6A954DB79F437652BE01C659 /* Pods_BrotherVietnam.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BrotherVietnam.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		783BB5AD043020F7ACB56AF9 /* Pods-BrotherVietnam.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BrotherVietnam.debug.xcconfig"; path = "Target Support Files/Pods-BrotherVietnam/Pods-BrotherVietnam.debug.xcconfig"; sourceTree = "<group>"; };
+		C39D192B3481DFA134021EBD /* Pods-BrotherVietnam.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BrotherVietnam.release.xcconfig"; path = "Target Support Files/Pods-BrotherVietnam/Pods-BrotherVietnam.release.xcconfig"; sourceTree = "<group>"; };
+		E26D52752272A9CA001329C5 /* BrotherVietnam.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BrotherVietnam.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E26D527F2272A9CC001329C5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E26D52822272A9CC001329C5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E26D52842272A9CC001329C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E26D528B2272AB5B001329C5 /* BootLogic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BootLogic.swift; path = BrotherVietnam/Core/BootLogic.swift; sourceTree = SOURCE_ROOT; };
+		E26D528C2272AB5B001329C5 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = BrotherVietnam/Core/AppDelegate.swift; sourceTree = SOURCE_ROOT; };
+		E26D528D2272AB5B001329C5 /* MainScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainScreen.swift; path = BrotherVietnam/Core/MainScreen.swift; sourceTree = SOURCE_ROOT; };
+		E26D528E2272AB5B001329C5 /* Menu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Menu.swift; path = BrotherVietnam/Core/Menu.swift; sourceTree = SOURCE_ROOT; };
+		E26D52942272ACCB001329C5 /* CustomLoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomLoginVC.swift; sourceTree = "<group>"; };
+		E26D529D2272B267001329C5 /* UIColor+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		E26D529E2272B267001329C5 /* UILabel+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UILabel+Extension.swift"; sourceTree = "<group>"; };
+		E26D529F2272B267001329C5 /* RoundButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E26D52722272A9CA001329C5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				70E835B44D2F1A09A86AC3AA /* Pods_BrotherVietnam.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0D0DD712A11874602FB4E8D2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				783BB5AD043020F7ACB56AF9 /* Pods-BrotherVietnam.debug.xcconfig */,
+				C39D192B3481DFA134021EBD /* Pods-BrotherVietnam.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		87CED80F7B351E30F3443FBB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6A954DB79F437652BE01C659 /* Pods_BrotherVietnam.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E26D526C2272A9CA001329C5 = {
+			isa = PBXGroup;
+			children = (
+				E26D52772272A9CA001329C5 /* BrotherVietnam */,
+				E26D52762272A9CA001329C5 /* Products */,
+				0D0DD712A11874602FB4E8D2 /* Pods */,
+				87CED80F7B351E30F3443FBB /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		E26D52762272A9CA001329C5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E26D52752272A9CA001329C5 /* BrotherVietnam.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E26D52772272A9CA001329C5 /* BrotherVietnam */ = {
+			isa = PBXGroup;
+			children = (
+				E26D52962272B239001329C5 /* Extension */,
+				E26D52932272ABD1001329C5 /* Login */,
+				E26D528A2272AB21001329C5 /* Core */,
+				E26D527F2272A9CC001329C5 /* Assets.xcassets */,
+				E26D52812272A9CC001329C5 /* LaunchScreen.storyboard */,
+				E26D52842272A9CC001329C5 /* Info.plist */,
+			);
+			path = BrotherVietnam;
+			sourceTree = "<group>";
+		};
+		E26D528A2272AB21001329C5 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				E26D528C2272AB5B001329C5 /* AppDelegate.swift */,
+				E26D528B2272AB5B001329C5 /* BootLogic.swift */,
+				E26D528D2272AB5B001329C5 /* MainScreen.swift */,
+				E26D528E2272AB5B001329C5 /* Menu.swift */,
+			);
+			name = Core;
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		E26D52932272ABD1001329C5 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				E26D52942272ACCB001329C5 /* CustomLoginVC.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		E26D52962272B239001329C5 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				E26D529F2272B267001329C5 /* RoundButton.swift */,
+				E26D529D2272B267001329C5 /* UIColor+Extension.swift */,
+				E26D529E2272B267001329C5 /* UILabel+Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E26D52742272A9CA001329C5 /* BrotherVietnam */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E26D52872272A9CC001329C5 /* Build configuration list for PBXNativeTarget "BrotherVietnam" */;
+			buildPhases = (
+				F7DD88CEF06E5FD4E0277A32 /* [CP] Check Pods Manifest.lock */,
+				E26D52712272A9CA001329C5 /* Sources */,
+				E26D52722272A9CA001329C5 /* Frameworks */,
+				E26D52732272A9CA001329C5 /* Resources */,
+				7D928A21FAA708DF98202DCC /* [CP] Embed Pods Frameworks */,
+				E39EF0B19340ACFFFE28F1F5 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BrotherVietnam;
+			productName = BrotherVietnam;
+			productReference = E26D52752272A9CA001329C5 /* BrotherVietnam.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E26D526D2272A9CA001329C5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = Techmaster;
+				TargetAttributes = {
+					E26D52742272A9CA001329C5 = {
+						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
+					};
+				};
+			};
+			buildConfigurationList = E26D52702272A9CA001329C5 /* Build configuration list for PBXProject "BrotherVietnam" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E26D526C2272A9CA001329C5;
+			productRefGroup = E26D52762272A9CA001329C5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E26D52742272A9CA001329C5 /* BrotherVietnam */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E26D52732272A9CA001329C5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E26D52832272A9CC001329C5 /* LaunchScreen.storyboard in Resources */,
+				E26D52802272A9CC001329C5 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7D928A21FAA708DF98202DCC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BrotherVietnam/Pods-BrotherVietnam-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BrotherVietnam/Pods-BrotherVietnam-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BrotherVietnam/Pods-BrotherVietnam-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E39EF0B19340ACFFFE28F1F5 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BrotherVietnam/Pods-BrotherVietnam-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BrotherVietnam/Pods-BrotherVietnam-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BrotherVietnam/Pods-BrotherVietnam-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F7DD88CEF06E5FD4E0277A32 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BrotherVietnam-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E26D52712272A9CA001329C5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E26D52A22272B267001329C5 /* RoundButton.swift in Sources */,
+				E26D52912272AB5B001329C5 /* MainScreen.swift in Sources */,
+				E26D52952272ACCB001329C5 /* CustomLoginVC.swift in Sources */,
+				E26D52902272AB5B001329C5 /* AppDelegate.swift in Sources */,
+				E26D52A12272B267001329C5 /* UILabel+Extension.swift in Sources */,
+				E26D52A02272B267001329C5 /* UIColor+Extension.swift in Sources */,
+				E26D52922272AB5B001329C5 /* Menu.swift in Sources */,
+				E26D528F2272AB5B001329C5 /* BootLogic.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		E26D52812272A9CC001329C5 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E26D52822272A9CC001329C5 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E26D52852272A9CC001329C5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E26D52862272A9CC001329C5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E26D52882272A9CC001329C5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 783BB5AD043020F7ACB56AF9 /* Pods-BrotherVietnam.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = H55CSPE9T9;
+				INFOPLIST_FILE = BrotherVietnam/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = vn.techmaster.BrotherVietnam;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E26D52892272A9CC001329C5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C39D192B3481DFA134021EBD /* Pods-BrotherVietnam.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = H55CSPE9T9;
+				INFOPLIST_FILE = BrotherVietnam/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = vn.techmaster.BrotherVietnam;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E26D52702272A9CA001329C5 /* Build configuration list for PBXProject "BrotherVietnam" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E26D52852272A9CC001329C5 /* Debug */,
+				E26D52862272A9CC001329C5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E26D52872272A9CC001329C5 /* Build configuration list for PBXNativeTarget "BrotherVietnam" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E26D52882272A9CC001329C5 /* Debug */,
+				E26D52892272A9CC001329C5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E26D526D2272A9CA001329C5 /* Project object */;
+}

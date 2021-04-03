@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ProtocolDelegateVC" customModule="TargetActionVsProtocolDelegate" customModuleProvider="target">
+            <connections>
+                <outlet property="myScrollView" destination="uMK-8U-PVm" id="wbb-Ai-AuJ"/>
+                <outlet property="textField" destination="Pxd-eT-7XX" id="8Cc-lQ-3TO"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalCentering" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="yhg-5y-aba">
+                    <rect key="frame" x="8" y="120" width="359" height="539"/>
+                    <subviews>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="Pxd-eT-7XX">
+                            <rect key="frame" x="0.0" y="0.0" width="359" height="32"/>
+                            <nil key="textColor"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uMK-8U-PVm" customClass="MyScrollView" customModule="TargetActionVsProtocolDelegate" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="36" width="359" height="503"/>
+                        </scrollView>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="uMK-8U-PVm" secondAttribute="bottom" id="4Qh-Fb-IVJ"/>
+                        <constraint firstItem="uMK-8U-PVm" firstAttribute="top" secondItem="Pxd-eT-7XX" secondAttribute="bottom" constant="4" id="SDa-yp-r3B"/>
+                        <constraint firstAttribute="trailing" secondItem="uMK-8U-PVm" secondAttribute="trailing" id="dCb-O8-f2I"/>
+                        <constraint firstItem="uMK-8U-PVm" firstAttribute="leading" secondItem="yhg-5y-aba" secondAttribute="leading" id="ygx-zA-hSf"/>
+                    </constraints>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="yhg-5y-aba" secondAttribute="bottom" constant="8" id="Jgt-8A-guP"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="yhg-5y-aba" secondAttribute="trailing" constant="8" id="LF0-mc-xPI"/>
+                <constraint firstItem="yhg-5y-aba" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="8" id="o7x-yW-V8m"/>
+                <constraint firstItem="yhg-5y-aba" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="100" id="qs8-s6-Zv1"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="-1588" y="-54"/>
+        </view>
+    </objects>
+</document>

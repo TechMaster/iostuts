@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MainWeather" customModule="WeatherApp" customModuleProvider="target">
+            <connections>
+                <outlet property="pagerTracking" destination="eAS-57-mgZ" id="W0t-m8-SEg"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="weathercitiesCollectionView" destination="6iY-Ee-6KV" id="gE3-V9-A4m"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="6iY-Ee-6KV">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="PH0-RJ-gUG">
+                        <size key="itemSize" width="50" height="50"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bk2-EP-3Vc">
+                    <rect key="frame" x="362" y="52" width="44" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="44" id="HX9-e2-j06"/>
+                        <constraint firstAttribute="height" constant="44" id="JRB-HZ-cTp"/>
+                    </constraints>
+                    <state key="normal" image="exchange"/>
+                    <connections>
+                        <action selector="onConvertDegree:" destination="-1" eventType="touchUpInside" id="Kss-19-U5Q"/>
+                    </connections>
+                </button>
+                <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="eAS-57-mgZ">
+                    <rect key="frame" x="187.5" y="809" width="39" height="37"/>
+                </pageControl>
+            </subviews>
+            <color key="backgroundColor" red="0.90196078430000004" green="0.90196078430000004" blue="0.90196078430000004" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="6iY-Ee-6KV" secondAttribute="trailing" id="7DT-IM-yPj"/>
+                <constraint firstItem="6iY-Ee-6KV" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="QJp-Jx-Wfy"/>
+                <constraint firstItem="eAS-57-mgZ" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="WTC-h5-caf"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="eAS-57-mgZ" secondAttribute="bottom" constant="16" id="Y2c-ni-FON"/>
+                <constraint firstItem="6iY-Ee-6KV" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="ZbL-v8-U18"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Bk2-EP-3Vc" secondAttribute="trailing" constant="8" id="hkt-IG-2K1"/>
+                <constraint firstItem="Bk2-EP-3Vc" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="8" id="neg-Mo-vLW"/>
+                <constraint firstAttribute="bottom" secondItem="6iY-Ee-6KV" secondAttribute="bottom" id="xFH-L1-DVv"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="34.782608695652179" y="34.821428571428569"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="exchange" width="32" height="32"/>
+    </resources>
+</document>

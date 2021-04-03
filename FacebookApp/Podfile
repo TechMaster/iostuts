@@ -1,0 +1,13 @@
+# platform :ios, '9.0'
+
+target 'facebookapp' do
+  use_frameworks!
+  pod 'FacebookCore'  #(0.5.0)
+  pod 'FacebookLogin' #(0.5.0)
+  pod 'FacebookShare' #(0.5.0)
+  pod 'FBSDKCoreKit', '~> 4.38.0'
+  pod 'FBSDKLoginKit', '~> 4.38.0'
+  pod 'FBSDKShareKit', '~> 4.38.0'
+  pod 'SteviaLayout'
+
+end

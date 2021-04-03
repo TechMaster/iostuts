@@ -1,0 +1,13 @@
+# platform :ios, '9.0'
+# https://developers.facebook.com/docs/app-events/upgrade-guide/
+target 'facebookapp' do
+  use_frameworks!
+  pod 'FacebookSDK'
+  pod 'FacebookSDK/LoginKit'
+  pod 'FacebookSDK/ShareKit'
+  pod 'FacebookSDK/PlacesKit'
+  pod 'FBSDKMessengerShareKit'
+  pod 'AccountKit'
+  pod 'SteviaLayout'
+
+end
